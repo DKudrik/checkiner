@@ -1,0 +1,79 @@
+2022-06-03 14:55:42,905 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:47]
+2022-06-03 15:04:28,058 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:47]
+2022-06-03 15:05:07,895 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:47]
+2022-06-03 15:05:56,400 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:47]
+2022-06-06 09:12:13,845 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 09:12:32,376 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 11:16:37,569 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 11:26:54,652 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 11:27:20,449 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 11:54:33,227 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 11:55:17,290 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 11:55:32,195 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 14:48:02,623 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:16:06,849 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:16:51,889 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:17:45,353 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:18:21,464 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:18:42,096 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:18:55,511 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:20:41,015 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:20:51,611 ERROR: Exception on /index [GET] [in /home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/denis/Dev/checkiner/app/routes.py", line 21, in index
+    posts = Post.objects.all()
+AttributeError: type object 'Post' has no attribute 'objects'
+2022-06-06 15:20:55,751 ERROR: Exception on /index [GET] [in /home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/denis/Dev/checkiner/app/routes.py", line 21, in index
+    posts = Post.objects.all()
+AttributeError: type object 'Post' has no attribute 'objects'
+2022-06-06 15:21:58,105 ERROR: Exception on /index [GET] [in /home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/denis/Dev/checkiner/app/routes.py", line 21, in index
+    posts = current_user.followed_posts()
+AttributeError: type object 'Post' has no attribute 'objects'
+2022-06-06 15:22:01,091 ERROR: Exception on /index [GET] [in /home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/denis/Dev/checkiner/.venv/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/denis/Dev/checkiner/app/routes.py", line 21, in index
+    posts = current_user.followed_posts()
+AttributeError: type object 'Post' has no attribute 'objects'
+2022-06-06 15:22:10,308 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:29:01,882 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:29:23,702 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:29:30,893 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:29:38,836 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:30:28,900 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
+2022-06-06 15:31:41,534 INFO: Checkiner startup [in /home/denis/Dev/checkiner/app/__init__.py:46]
